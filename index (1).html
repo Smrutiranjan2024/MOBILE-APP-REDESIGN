@@ -1,0 +1,255 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Music App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .hover-3d:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(10deg);
+   }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-1/6 bg-gray-900 p-4">
+    <div class="flex flex-col items-center">
+     <i class="fas fa-bars text-2xl mb-4 hover:text-gray-400 transition duration-300">
+     </i>
+     <div class="flex flex-col space-y-4">
+      <i class="fas fa-heart text-2xl hover:text-red-500 transition duration-300">
+      </i>
+      <img alt="Album cover 1" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/VM7CctXZmPoySHu2XNJOh1SsfWdRoFw1Hj5PWpkoo2c.jpg" width="50"/>
+      <img alt="Album cover 2" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/-5tXlKkevJbDsJ5DtokajI9sObqEjyRKjUpoC8UphQM.jpg" width="50"/>
+      <img alt="Album cover 3" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/cq27iDJ34AWepq4mpDYt5utEMo76GGYa2ziywmibVkU.jpg" width="50"/>
+      <img alt="Album cover 4" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/jeXyu7QuOQ1NTsf56gDQll2Q8Aybi5GQh79PP5TqZpk.jpg" width="50"/>
+      <img alt="Album cover 5" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/e0pmDw1B8EiXonn9dcf7pXMtATyYi8cPjMG0Edcaq7k.jpg" width="50"/>
+      <img alt="Album cover 6" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/yYLUwUICW5SctvAiFxz39pcJ398Zsp1xlYMUVUi7o04.jpg" width="50"/>
+      <img alt="Album cover 7" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/nUVc6Iy19FtoESRN82A8c0-RaIhNZmA1n4y12x8AvII.jpg" width="50"/>
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-4">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-4">
+     <div class="flex items-center space-x-4">
+      <i class="fas fa-chevron-left text-2xl hover:text-gray-400 transition duration-300">
+      </i>
+      <i class="fas fa-chevron-right text-2xl hover:text-gray-400 transition duration-300">
+      </i>
+      <input class="bg-gray-800 text-white p-2 rounded w-96 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" placeholder="What do you want to play?" type="text"/>
+     </div>
+     <div class="flex items-center space-x-4">
+      <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition duration-300">
+       Explore Premium
+      </button>
+      <i class="fas fa-bell text-2xl hover:text-gray-400 transition duration-300">
+      </i>
+      <i class="fas fa-cog text-2xl hover:text-gray-400 transition duration-300">
+      </i>
+      <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-orange-600 transition duration-300">
+       R
+      </div>
+     </div>
+    </div>
+    <!-- Tabs -->
+    <div class="flex space-x-4 mb-4">
+     <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition duration-300">
+      All
+     </button>
+     <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition duration-300">
+      Music
+     </button>
+     <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition duration-300">
+      Podcasts
+     </button>
+    </div>
+    <!-- Playlists -->
+    <div class="grid grid-cols-3 gap-4 mb-8">
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="Liked Songs" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/kfKwV_tq64GPZ9VMYve9_-Qxr-Qm7Q60P3-c9ajgFSA.jpg" width="100"/>
+      <p>
+       Liked Songs
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="All Out 00's Hindi" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/YStcSVhYzEzdZdqM4BakQZP8Q_uCtq_iTmqixN01ObQ.jpg" width="100"/>
+      <p>
+       All Out 00's Hindi
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="First Love" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/3VZne6jK9Dli5Q-qR2bhSOPwuLcTTRtPC9aFawBP5Ok.jpg" width="100"/>
+      <p>
+       First Love
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="Vinnaithaandi Varuvaayaa" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/xKdKYXBxrlUKEYf9vBwVBNNxmILyRf_03hdf8AtxUyE.jpg" width="100"/>
+      <p>
+       Vinnaithaandi Varuvaayaa
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="Odia" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/9BpZWWjx4jJ_3AitFcDw8SmZQ3htUhcR9gHKU02sKzg.jpg" width="100"/>
+      <p>
+       Odia
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="Trending Valentine's Hits" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/XAHfQTrlknBWB1LFJz1cjypyRaeNe7PNgbv3giTWWPc.jpg" width="100"/>
+      <p>
+       Trending Valentine's Hits
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="Akhi Palake Mo Tu" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/rIWa0-nyByix1vEX6peit0V98MNDsyMrbygjlMX62NY.jpg" width="100"/>
+      <p>
+       Akhi Palake Mo Tu
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+      <img alt="AP Dhillon Hits" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/_hJWVGlvbcZEQsOa2EOxGtWCC9B5hXPVj0vneNw8MKQ.jpg" width="100"/>
+      <p>
+       AP Dhillon Hits
+      </p>
+     </div>
+    </div>
+    <!-- Picked for you -->
+    <div class="mb-8">
+     <h2 class="text-xl mb-4">
+      Picked for you
+     </h2>
+     <div class="flex space-x-4">
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="All Out 00's Hindi" class="rounded mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/YStcSVhYzEzdZdqM4BakQZP8Q_uCtq_iTmqixN01ObQ.jpg" width="200"/>
+       <p class="text-lg">
+        All Out 00's Hindi
+       </p>
+       <p class="text-sm text-gray-400">
+        Bollywood songs that ruled hearts in the Y2K decade.
+       </p>
+       <button class="bg-white text-black px-4 py-2 rounded mt-2 hover:bg-gray-200 transition duration-300">
+        <i class="fas fa-play">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+    <!-- Made for Raja -->
+    <div class="mb-8">
+     <h2 class="text-xl mb-4">
+      Made For Raja
+     </h2>
+     <div class="flex space-x-4">
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Daily Mix 1" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/gVaZlOr3b2PRmv6iNyFOytOtF4mh6YrpV5tsNVdefBQ.jpg" width="100"/>
+       <p class="text-lg">
+        Daily Mix 1
+       </p>
+       <p class="text-sm text-gray-400">
+        Pritam, Arijit Singh, Vishal-Shekhar and more
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Daily Mix 2" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/jUQnFgLUj3KX2t1nJ4t5qL1f9ocM48Jhd-K74exGd7A.jpg" width="100"/>
+       <p class="text-lg">
+        Daily Mix 2
+       </p>
+       <p class="text-sm text-gray-400">
+        Sachin-Jigar, Vishal Mishra, Diljit Dosanjh and more
+       </p>
+       <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 hover:bg-green-600 transition duration-300">
+        <i class="fas fa-play">
+        </i>
+       </button>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Daily Mix 3" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/OrN_O-WrYnUpUieqmI_D37ZEOrLfarvxdkFnV8ESNnY.jpg" width="100"/>
+       <p class="text-lg">
+        Daily Mix 3
+       </p>
+       <p class="text-sm text-gray-400">
+        Humane Sagar, Swayam Padhi, Kumar Bapi and more
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Daily Mix 4" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/m6N5G12hZlJt5b0uQSWd7TG6UGk5LwF_fB_yud-I11E.jpg" width="100"/>
+       <p class="text-lg">
+        Daily Mix 4
+       </p>
+       <p class="text-sm text-gray-400">
+        Saudur, Mitraz, Anuv Jain and more
+       </p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Daily Mix 5" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/EIy5uF63g70IO7dxWVB8AJRuMastq6RQyTf6jbBbMX0.jpg" width="100"/>
+       <p class="text-lg">
+        Daily Mix 5
+       </p>
+       <p class="text-sm text-gray-400">
+        Shubh, AP Dhillon, Sidhu Moose Wala and more
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Recently played -->
+    <div>
+     <h2 class="text-xl mb-4">
+      Recently played
+     </h2>
+     <div class="flex space-x-4">
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Recently played 1" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/bZgxHS_c7Lp0fcCmRUAAKJdZu0ksdSsMHphZtIVWhTk.jpg" width="100"/>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Recently played 2" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/LdxfAWKIS7zBZlUSEU8Xyd6YrIve0x1aBffjz7JV-zs.jpg" width="100"/>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Recently played 3" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/d_yXvc_CbhfTlDHdDuXp9FpS_DisH1BG667B_gooE6g.jpg" width="100"/>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Recently played 4" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/oaRIvq5YlRWGK9Xsu4TSnwyo50RhjRxOQW4Ecgy9I0A.jpg" width="100"/>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover-3d transition duration-300">
+       <img alt="Recently played 5" class="rounded mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/f-tVaqkEH5APmXul-Oxu6zyR5RCIJKcYt0vHbjSy0C4.jpg" width="100"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Bottom Player -->
+  <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex justify-between items-center">
+   <div class="flex items-center space-x-4">
+    <img alt="Current song cover" class="rounded hover-3d transition duration-300" height="50" src="https://storage.googleapis.com/a1aa/image/TfTi7wVJA5cnSMrPOAVy6mBelN6wVPWxGJWjofe_hAo.jpg" width="50"/>
+    <div>
+     <p class="text-white">
+      Current Song
+     </p>
+     <p class="text-gray-400">
+      Artist Name
+     </p>
+    </div>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-step-backward text-2xl hover:text-gray-400 transition duration-300">
+    </i>
+    <i class="fas fa-play text-2xl hover:text-gray-400 transition duration-300">
+    </i>
+    <i class="fas fa-step-forward text-2xl hover:text-gray-400 transition duration-300">
+    </i>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-volume-up text-2xl hover:text-gray-400 transition duration-300">
+    </i>
+    <input class="w-32" type="range"/>
+   </div>
+  </div>
+ </body>
+</html>
